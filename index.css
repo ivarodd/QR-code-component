@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
@@ -11,12 +10,11 @@
 
 html{
    font-family: "Outfit-VariableFont_wght", sans-serif;
-   font-size: 15px;
 }
 
 .container{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
     background-color: hsl(212, 45%, 89%);
     display: grid;
     place-content: center;
@@ -26,7 +24,7 @@ html{
     background-color: hsl(0, 0%, 100%);
     width: 330px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -35,18 +33,19 @@ html{
 }
 
 .container .imagen img{
-    border-radius: 15px;
+    border-radius: 0.938rem;
 }
 
 .imagen{
-    padding: 15px;
+    padding: 0.938rem;
 }
 
 
 .texto1{
+    font-size: 0.938rem;
     font-variation-settings: "wght" 700;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
     color: hsl(218, 44%, 22%);
     text-align: center; 
     grid-column: 1/2;
@@ -54,9 +53,11 @@ html{
 }
 
 .texto2{ 
+    font-size: 0.938rem;
     font-variation-settings: "wght" 400;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 10px;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
     color:hsl(220, 15%, 55%);
     text-align: center; 
     grid-column: 1/2;
@@ -64,13 +65,27 @@ html{
 }
 
 @media screen and (max-width: 375px) {
+    html{
+        font-size: 0.7em;
+    }
     .container{
        width: 75%;
-    }
-    .container2{
-       width: 75%;
+       padding-top: 6.25rem;
+       padding-bottom: 6.25rem;
     }
     
+    .container2{
+        width: 175px;
+        height: 320px;
+        grid-template-rows: repeat(3, 1fr 0.8fr 0.8fr);
+        justify-content: center;
+        align-content: center;
+    }
+    .imagen img{
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 
